@@ -1,0 +1,824 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+/**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+.cf {
+  *zoom: 1;
+}
+
+.pt-sans-regular {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pt-sans-bold {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.pt-sans-regular-italic {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.pt-sans-bold-italic {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* MY CSS */
+
+:root {
+  color-scheme: light only;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(123, 43, 43);
+  border-radius: 5px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  background-color: rgb(255, 245, 245);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.header {
+  position: fixed;
+  background-color: rgb(230, 60, 60);
+  top: -1px;
+  width: 100%;
+  height: 60px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  z-index: 999999;
+  transition: top 0.5s;
+}
+
+.header img {
+  position: relative;
+  border-radius: 50%;
+  top: 8px;
+  left: 8px;
+  width: 45px;
+  height: 45px;
+}
+
+.header h1 {
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  left: 60px;
+  top: 18px;
+  width: auto;
+}
+
+.header a[href="javascript:void(0)"] {
+  display: block;
+  position: relative;
+  top: 17px;
+  right: 10px;
+  float: right;
+}
+
+.img-navbar-menu {
+  background-image: url(img/navbar-menu.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: invert(1);
+  width: 25px;
+  height: 25px;
+}
+
+a.discord-nav {
+  position: relative;
+  float: right;
+  text-align: center;
+  right: 15px;
+  top: 20px;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  background-color: rgb(58, 76, 238);
+  color: white;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+a.discord-nav:hover {
+  background-color: rgb(33, 29, 151);
+}
+
+ul#navbar li a {
+  display: block;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  background-color: rgb(149, 40, 40);
+  transition: 0.2s;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+ul#navbar li a:hover {
+  background-color: rgb(101, 2, 2);
+}
+
+ul#navbar li a:active,
+a.discord-nav:active {
+  transform: scale(0.95);
+}
+
+/* Phone */
+@media screen and (max-width: 480px) {
+  ul#navbar.hide-nav {
+    display: none;
+  }
+
+  #navbar {
+    position: fixed;
+    top: 59px;
+    width: 100%;
+    height: fit-content;
+  }
+  ul#navbar li a {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+  }
+
+  .header a.discord-nav {
+    font-size: 14px;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    top: 16px;
+  }
+}
+
+/* Hide title text to avoid text colliding with navbar */
+@media screen and (max-width: 640px) {
+  .header h1 {
+    display: none;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 480px) {
+  .header {
+    height: 70px;
+  }
+  .header img {
+    top: 10px;
+    left: 6px;
+    width: 50px;
+    height: 50px;
+  }
+  .header h1 {
+    font-size: 30px;
+    top: 20px;
+  }
+  .header a[href="javascript:void(0)"] {
+    display: none;
+  }
+  ul#navbar {
+    position: relative;
+    float: right;
+    top: 16px;
+    right: 14px;
+  }
+
+  ul#navbar li {
+    float: left;
+    width: 100px;
+  }
+
+  ul#navbar li a {
+    font-size: 16px;
+    transform: scale(0.9);
+    border-radius: 20px;
+  }
+  .header a.discord-nav {
+    transform: scale(0.9);
+    font-size: 16px;
+    top: 16px;
+  }
+}
+
+/* Laptop */
+@media screen and (min-width: 768px) {
+  .header {
+    height: 80px;
+  }
+  .header img {
+    top: 10px;
+    left: 6px;
+    width: 60px;
+    height: 60px;
+  }
+  .header h1 {
+    font-size: 40px;
+    left: 70px;
+    top: 18px;
+  }
+  ul#navbar {
+    position: relative;
+    float: right;
+    top: 21px;
+    right: 26px;
+  }
+
+  ul#navbar li {
+    float: left;
+    margin: 0 10px;
+  }
+  ul#navbar li a {
+    font-size: 18px;
+    width: 110px;
+    transform: scale(1);
+  }
+  .header a.discord-nav {
+    font-size: 18px;
+    top: 21px;
+    transform: scale(1);
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+  .header {
+    height: 90px;
+  }
+  .header img {
+    top: 16px;
+    left: 6px;
+    width: 60px;
+    height: 60px;
+  }
+  .header h1 {
+    font-size: 50px;
+    left: 70px;
+    top: 21px;
+  }
+  ul#navbar {
+    position: relative;
+    float: right;
+    top: 26px;
+    right: 35px;
+  }
+
+  ul#navbar li {
+    float: left;
+    margin: 0 20px;
+  }
+  ul#navbar li a {
+    transform: scale(1.15);
+    width: 110px;
+  }
+  .header a.discord-nav {
+    transform: scale(1.15);
+    top: 26px;
+  }
+}
+
+.content {
+  margin-top: 150px;
+  text-align: center;
+}
+
+.intro {
+  margin-top: 90px;
+  margin-bottom: 100px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.intro h1 {
+  font-size: 40px;
+  padding-top: 30px;
+  margin-bottom: 25px;
+}
+
+.intro p {
+  font-size: 16px;
+  margin: 0 2px;
+}
+
+.intro p span {
+  text-decoration: underline;
+}
+
+.intro p a {
+  color: rgb(184, 57, 57);
+  font-style: italic;
+}
+.intro p a:hover {
+  text-decoration: underline;
+}
+
+/* Tablet */
+@media screen and (min-width: 480px) {
+  .intro h1 {
+    font-size: 50px;
+  }
+
+  .intro p {
+    font-size: 18px;
+  }
+}
+
+/* Laptop */
+@media screen and (min-width: 768px) {
+  .intro h1 {
+    font-size: 60px;
+  }
+
+  .intro p {
+    font-size: 20px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+  .intro h1 {
+    font-size: 70px;
+  }
+
+  .intro p {
+    font-size: 24px;
+  }
+}
+
+.team h1.team-title {
+  flex: 100%;
+  color: white;
+  font-size: 30px;
+  margin: 5px 0;
+  text-decoration: underline;
+}
+
+.team p.team-info {
+  flex: 100%;
+  color: rgb(238, 238, 238);
+  font-size: 13px;
+  margin: 0 0 20px;
+}
+
+.team {
+  background-image: linear-gradient(rgb(230, 60, 60), rgb(250, 168, 168));
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.team-item {
+  flex: 30%;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  padding: 20px 0;
+  box-sizing: border-box;
+  margin: 1px;
+  transition: 0.2s;
+}
+
+.team .team-item:hover {
+  transform: scale(0.98);
+}
+
+.team-item img.image {
+  width: 100px;
+  height: 100px;
+  transform: scale(0.9);
+  object-fit: cover;
+  object-position: -8px;
+  margin: auto;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  border: 2px solid rgb(246, 246, 246);
+  box-shadow: 0 0 1px 3px rgb(230, 60, 60);
+}
+
+.team-item.lynx {
+  flex: 100%;
+}
+
+.raka img.image {
+  object-position: -14px;
+}
+.hisyam-zuhdi img.image {
+  object-position: -21px;
+}
+
+.rommel-fox img.image {
+  object-position: 0px;
+}
+
+.team-item h1,
+h2,
+p {
+  padding: 0 10px;
+}
+
+.team-item h1 {
+  font-size: 18px;
+  color: rgb(105, 44, 44);
+}
+
+.team-item h2 {
+  font-size: 11px;
+  margin-bottom: 15px;
+}
+.team-item p {
+  font-size: 13px;
+  flex-grow: 1;
+}
+
+.read-more-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: inherit;
+  background-color: rgb(255, 213, 213);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  overflow: auto;
+  overflow-x: hidden;
+  transition: 0.4s;
+}
+
+.team-item .read-more-overlay h1 {
+  padding: 10px 0;
+}
+
+.read-more-overlay:hover {
+  opacity: 1;
+}
+
+/* Tablet */
+@media screen and (min-width: 480px) {
+  .team h1.team-title {
+    font-size: 35px;
+  }
+
+  .team p.team-info {
+    font-size: 15px;
+  }
+
+  .team-item img.image {
+    transform: scale(1);
+  }
+
+  .team .team-item h1 {
+    font-size: 20px;
+  }
+
+  .team .team-item h2 {
+    font-size: 13px;
+  }
+
+  .team .team-item p {
+    font-size: 15px;
+  }
+}
+
+/* Laptop */
+@media screen and (min-width: 768px) {
+  .team h1.team-title {
+    font-size: 40px;
+  }
+
+  .team p.team-info {
+    font-size: 17px;
+  }
+
+  .team-item img.image {
+    transform: scale(1.1);
+  }
+
+  .team .team-item h1 {
+    font-size: 22px;
+  }
+
+  .team .team-item h2 {
+    font-size: 15px;
+  }
+
+  .team .team-item p {
+    font-size: 17px;
+  }
+}
+
+/* Laptop */
+@media screen and (min-width: 1024px) {
+  .team h1.team-title {
+    font-size: 45px;
+  }
+
+  .team p.team-info {
+    font-size: 19px;
+  }
+
+  .team-item img.image {
+    transform: scale(1.1);
+  }
+
+  .team .team-item h1 {
+    font-size: 24px;
+  }
+
+  .team .team-item h2 {
+    font-size: 17px;
+  }
+
+  .team .team-item p {
+    font-size: 19px;
+  }
+}
+
+.download {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 3px;
+  background-color: rgb(250, 168, 168);
+  padding: 0 5px 40px;
+}
+
+.download h1[class] {
+  display: flex;
+  flex: 100%;
+  justify-content: center;
+  color: rgb(133, 25, 25);
+  text-decoration: underline;
+  font-size: 26px;
+  padding: 30px 0 10px;
+}
+
+.download .version-card {
+  display: flex;
+  flex-direction: column;
+  flex: 30%;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  margin: 10px auto;
+  padding: 8px;
+  box-sizing: content-box;
+  transition: 0.2s;
+}
+
+.download .version-card h1 {
+  font-size: 30px;
+  color: rgb(114, 16, 16);
+  border-bottom: 1px solid rgb(230, 60, 60);
+}
+
+.download .version-card p {
+  margin: 30px 0;
+  font-size: 13px;
+  flex-grow: 1;
+}
+
+.version-card a.downloadBtn {
+  background-color: rgb(149, 40, 40);
+  justify-content: space-between;
+  width: auto;
+  height: 30px;
+  line-height: 30px;
+  transition: 0.2s;
+}
+
+.version-card a.downloadBtn:hover {
+  background-color: rgb(101, 2, 2);
+}
+
+.version-card a.downloadBtn:active {
+  transform: scale(0.95);
+}
+
+/* Tablet */
+@media screen and (min-width: 480px) {
+  .download h1[class] {
+    font-size: 28px;
+  }
+
+  .download .version-card h1 {
+    font-size: 32px;
+  }
+
+  .download .version-card p {
+    font-size: 15px;
+  }
+}
+
+/* Laptop */
+@media screen and (min-width: 768px) {
+  .download h1[class] {
+    font-size: 30px;
+  }
+
+  .download .version-card h1 {
+    font-size: 34px;
+  }
+
+  .download .version-card p {
+    font-size: 17px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+  .download h1[class] {
+    font-size: 32px;
+  }
+
+  .download .version-card h1 {
+    font-size: 36px;
+  }
+
+  .download .version-card p {
+    font-size: 19px;
+  }
+}
