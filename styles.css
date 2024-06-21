@@ -152,7 +152,7 @@ table {
   * Include this rule to trigger hasLayout and contain floats.
   */
 .cf {
-  *zoom: 1;
+  zoom: 1;
 }
 
 .pt-sans-regular {
@@ -234,15 +234,6 @@ a {
   left: 8px;
   width: 45px;
   height: 45px;
-}
-
-.header h1 {
-  color: white;
-  font-size: 25px;
-  position: absolute;
-  left: 60px;
-  top: 18px;
-  width: auto;
 }
 
 .header a[href="javascript:void(0)"] {
@@ -330,13 +321,6 @@ a.discord-nav:active {
   }
 }
 
-/* Hide title text to avoid text colliding with navbar */
-@media screen and (max-width: 640px) {
-  .header h1 {
-    display: none;
-  }
-}
-
 /* Tablet */
 @media screen and (min-width: 480px) {
   .header {
@@ -347,10 +331,6 @@ a.discord-nav:active {
     left: 6px;
     width: 50px;
     height: 50px;
-  }
-  .header h1 {
-    font-size: 30px;
-    top: 20px;
   }
   .header a[href="javascript:void(0)"] {
     display: none;
@@ -390,11 +370,6 @@ a.discord-nav:active {
     width: 60px;
     height: 60px;
   }
-  .header h1 {
-    font-size: 40px;
-    left: 70px;
-    top: 18px;
-  }
   ul#navbar {
     position: relative;
     float: right;
@@ -428,11 +403,6 @@ a.discord-nav:active {
     left: 6px;
     width: 60px;
     height: 60px;
-  }
-  .header h1 {
-    font-size: 50px;
-    left: 70px;
-    top: 21px;
   }
   ul#navbar {
     position: relative;
