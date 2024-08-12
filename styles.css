@@ -704,16 +704,16 @@ p {
   color: rgb(133, 25, 25);
   text-decoration: underline;
   font-size: 26px;
-  padding: 30px 0 10px;
+  padding: 30px 0;
 }
 
 .download .version-card {
   display: flex;
   flex-direction: column;
-  flex: 30%;
+  flex: 40%;
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 5px;
-  margin: 10px auto;
+  margin: 0 auto;
   padding: 8px;
   box-sizing: content-box;
   transition: 0.2s;
