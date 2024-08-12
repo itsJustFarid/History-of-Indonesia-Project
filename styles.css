@@ -229,6 +229,7 @@ a {
 
 .header img {
   position: relative;
+  float: left;
   border-radius: 50%;
   top: 8px;
   left: 8px;
@@ -236,30 +237,11 @@ a {
   height: 45px;
 }
 
-.header a[href="javascript:void(0)"] {
-  display: block;
-  position: relative;
-  top: 17px;
-  right: 10px;
-  float: right;
-}
-
-.img-navbar-menu {
-  background-image: url(img/navbar-menu.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  filter: invert(1);
-  width: 25px;
-  height: 25px;
-}
-
 a.discord-nav {
   position: relative;
   float: right;
   text-align: center;
-  right: 15px;
-  top: 20px;
-  width: 100px;
+  width: 140px;
   height: 40px;
   line-height: 40px;
   background-color: rgb(58, 76, 238);
@@ -272,51 +254,14 @@ a.discord-nav:hover {
   background-color: rgb(33, 29, 151);
 }
 
-ul#navbar li a {
-  display: block;
-  text-align: center;
-  height: 40px;
-  line-height: 40px;
-  background-color: rgb(149, 40, 40);
-  transition: 0.2s;
-  cursor: pointer;
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-ul#navbar li a:hover {
-  background-color: rgb(101, 2, 2);
-}
-
-ul#navbar li a:active,
-a.discord-nav:active {
-  transform: scale(0.95);
-}
-
 /* Phone */
 @media screen and (max-width: 480px) {
-  ul#navbar.hide-nav {
-    display: none;
-  }
-
-  #navbar {
-    position: fixed;
-    top: 59px;
-    width: 100%;
-    height: fit-content;
-  }
-  ul#navbar li a {
-    width: 100%;
+  .header a.discord-nav {
+    transform: scale(0.9);
+    font-size: 14px;
+    width: 140px;
     height: 40px;
     line-height: 40px;
-    font-size: 14px;
-  }
-
-  .header a.discord-nav {
-    font-size: 14px;
-    width: 80px;
-    height: 30px;
-    line-height: 30px;
     top: 16px;
   }
 }
@@ -328,34 +273,15 @@ a.discord-nav:active {
   }
   .header img {
     top: 10px;
-    left: 6px;
+    left: 18px;
     width: 50px;
     height: 50px;
   }
-  .header a[href="javascript:void(0)"] {
-    display: none;
-  }
-  ul#navbar {
-    position: relative;
-    float: right;
-    top: 16px;
-    right: 14px;
-  }
-
-  ul#navbar li {
-    float: left;
-    width: 100px;
-  }
-
-  ul#navbar li a {
-    font-size: 16px;
-    transform: scale(0.9);
-    border-radius: 20px;
-  }
   .header a.discord-nav {
-    transform: scale(0.9);
+    transform: scale(1);
     font-size: 16px;
     top: 16px;
+    right: 18px;
   }
 }
 
@@ -366,30 +292,15 @@ a.discord-nav:active {
   }
   .header img {
     top: 10px;
-    left: 6px;
+    left: 24px;
     width: 60px;
     height: 60px;
-  }
-  ul#navbar {
-    position: relative;
-    float: right;
-    top: 21px;
-    right: 26px;
-  }
-
-  ul#navbar li {
-    float: left;
-    margin: 0 10px;
-  }
-  ul#navbar li a {
-    font-size: 18px;
-    width: 110px;
-    transform: scale(1);
   }
   .header a.discord-nav {
     font-size: 18px;
     top: 21px;
-    transform: scale(1);
+    right: 24px;
+    transform: scale(1.1);
   }
 }
 
@@ -400,28 +311,14 @@ a.discord-nav:active {
   }
   .header img {
     top: 16px;
-    left: 6px;
+    left: 26px;
     width: 60px;
     height: 60px;
-  }
-  ul#navbar {
-    position: relative;
-    float: right;
-    top: 26px;
-    right: 35px;
-  }
-
-  ul#navbar li {
-    float: left;
-    margin: 0 20px;
-  }
-  ul#navbar li a {
-    transform: scale(1.15);
-    width: 110px;
   }
   .header a.discord-nav {
     transform: scale(1.15);
     top: 26px;
+    right: 26px;
   }
 }
 
