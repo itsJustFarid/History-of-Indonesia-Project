@@ -733,10 +733,10 @@ p {
 
 .version-card a.downloadBtn {
   background-color: rgb(149, 40, 40);
-  justify-content: space-between;
   width: auto;
-  height: 30px;
-  line-height: 30px;
+  height: 40px;
+  line-height: 50px;
+  border-radius: 5px;
   transition: 0.2s;
 }
 
