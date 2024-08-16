@@ -248,27 +248,27 @@ a {
 
 .event-dialog h2 {
   margin-bottom: 8px;
-  font-size: 1.9em;
+  font-size: 1.7em;
   text-decoration: underline;
 }
 
 .event-dialog p {
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 
 .event-dialog h5 {
   margin: 16px 0 8px;
   font-style: italic;
-  font-size: 1.15em;
+  font-size: 1.05em;
 }
 
 .event-dialog h1 {
-  font-size: 2.5em;
+  font-size: 2.3em;
   font-weight: bolder;
 }
 
 .event-dialog h3 {
-  font-size: 1.5em;
+  font-size: 1.3em;
   border-top: 2px black solid;
   padding: 4px 0 8px;
 }
@@ -302,19 +302,19 @@ a {
 /* Tablet */
 @media screen and (min-width: 480px) {
  .event-dialog h2 {
-  font-size: 2em;
+  font-size: 1.8em;
 }
 
 .event-dialog p {
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 .event-dialog h5 {
-  font-size: 1.25em;
+  font-size: 1.15em;
 }
 
 .event-dialog h3 {
-  font-size: 1.6em;
+  font-size: 1.4em;
 }
 
 .event-dialog #close-event {
@@ -325,39 +325,39 @@ a {
 /* Laptop */
 @media screen and (min-width: 768px) {
  .event-dialog h2 {
-  font-size: 2.2em;
+  font-size: 1.9em;
 
 }
 .event-dialog p {
-  font-size: 1.7em;
+  font-size: 1.4em;
 }
 .event-dialog h5 {
-  font-size: 1.45em;
+  font-size: 1.25em;
 }
 .event-dialog h3 {
-  font-size: 1.8em;
+  font-size: 1.5em;
 }
 .event-dialog #close-event {
-  font-size: 1.3em;
+  font-size: 1.2em;
   }
 }
 
 /* Desktop */
 @media screen and (min-width: 1024px) {
  .event-dialog h2 {
-  font-size: 2.3em;
+  font-size: 2em;
 }
 .event-dialog p {
-  font-size: 1.8em;
+  font-size: 1.5em;
 }
 .event-dialog h5 {
-  font-size: 1.55em;
+  font-size: 1.35em;
 }
 .event-dialog h3 {
-  font-size: 1.9em;
+  font-size: 1.5em;
 }
 .event-dialog #close-event {
-  font-size: 1.4em;
+  font-size: 1.3em;
   }
 }
 
