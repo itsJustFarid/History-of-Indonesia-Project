@@ -215,6 +215,153 @@ a {
   color: white;
 }
 
+.event-container {
+  position: fixed;
+  display: flex;
+  text-align: center;
+  background-color: rgba(32, 32, 32, 0.6);
+  z-index: 3;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.event-dialog {
+  background-color: rgb(250, 168, 168);
+  width: 90%;
+  margin: auto;
+  padding: 16px;
+  box-sizing: border-box;
+  border-radius: 16px;
+}
+
+
+.event-dialog .container {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: rgb(255,255,255);
+  width: 100%;
+  height: max-content;
+  padding: 16px 4px 16px;
+  box-sizing: border-box;
+}
+
+.event-dialog h2 {
+  margin-bottom: 8px;
+  font-size: 1.9em;
+  text-decoration: underline;
+}
+
+.event-dialog p {
+  font-size: 1.4em;
+}
+
+.event-dialog h5 {
+  margin: 16px 0 8px;
+  font-style: italic;
+  font-size: 1.15em;
+}
+
+.event-dialog h1 {
+  font-size: 2.5em;
+  font-weight: bolder;
+}
+
+.event-dialog h3 {
+  font-size: 1.5em;
+  border-top: 2px black solid;
+  padding: 4px 0 8px;
+}
+
+.event-dialog .event_hoid {
+  margin: 8px;
+  width: 50%;
+  border-radius: 50%;
+}
+
+.event-dialog #close-event {
+  margin-top: 16px;
+  background-color: rgb(149, 40, 40);
+  color: white;
+  width: 160px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 1em;
+  border-color: transparent;
+  transition: 0.1s;
+}
+
+.event-dialog #close-event:hover {
+  background-color: rgb(101, 2, 2);
+}
+
+.event-dialog #close-event:active {
+  transform: scale(0.95);
+}
+
+/* Tablet */
+@media screen and (min-width: 480px) {
+ .event-dialog h2 {
+  font-size: 2em;
+}
+
+.event-dialog p {
+  font-size: 1.5em;
+}
+
+.event-dialog h5 {
+  font-size: 1.25em;
+}
+
+.event-dialog h3 {
+  font-size: 1.6em;
+}
+
+.event-dialog #close-event {
+  font-size: 1.1em;
+  }
+}
+
+/* Laptop */
+@media screen and (min-width: 768px) {
+ .event-dialog h2 {
+  font-size: 2.2em;
+
+}
+.event-dialog p {
+  font-size: 1.7em;
+}
+.event-dialog h5 {
+  font-size: 1.45em;
+}
+.event-dialog h3 {
+  font-size: 1.8em;
+}
+.event-dialog #close-event {
+  font-size: 1.3em;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+ .event-dialog h2 {
+  font-size: 2.3em;
+}
+.event-dialog p {
+  font-size: 1.8em;
+}
+.event-dialog h5 {
+  font-size: 1.55em;
+}
+.event-dialog h3 {
+  font-size: 1.9em;
+}
+.event-dialog #close-event {
+  font-size: 1.4em;
+  }
+}
+
+
 .header {
   position: fixed;
   background-color: rgb(230, 60, 60);
@@ -223,8 +370,8 @@ a {
   height: 60px;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  z-index: 999999;
-  transition: top 0.5s;
+  z-index: 2;
+  transition: top 0.3s;
 }
 
 .header img {
