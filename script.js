@@ -47,7 +47,7 @@ if ((myDevice === "mobile") | (myDevice === "tablet")) {
 // Close Dialog button function
 
 $(document).ready(function (p) {
-  $("body").css("overflow", "hidden");
+  $("body").css("overflow-y", "hidden");
   $(".event-container").hide(0, function (p) {
     $(".event-container").fadeIn("slow");
   });
@@ -57,6 +57,6 @@ $(document).ready(function (p) {
 document.getElementById("close-event").addEventListener("click", function (e) {
   document.getElementById("audio-event").pause();
   $(".event-container").fadeOut("slow", function (p) {
-    $("body").css("overflow", "scroll");
+    $("body").css("overflow-y", "auto");
   });
 })
