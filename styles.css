@@ -229,7 +229,7 @@ a {
 .event-dialog {
   background-color: rgb(250, 168, 168);
   width: 90%;
-  max-height: 70%;
+  max-height: 60%;
   margin: auto;
   padding: 16px;
   box-sizing: border-box;
