@@ -229,6 +229,7 @@ a {
 .event-dialog {
   background-color: rgb(250, 168, 168);
   width: 90%;
+  max-height: 70%;
   margin: auto;
   padding: 16px;
   box-sizing: border-box;
@@ -276,7 +277,7 @@ a {
 
 .event-dialog .event_hoid {
   margin: 8px;
-  width: 30%;
+  width: 25%;
   border-radius: 50%;
 }
 
