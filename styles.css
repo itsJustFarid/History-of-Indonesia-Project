@@ -279,6 +279,11 @@ a {
   border-radius: 50%;
 }
 
+.event-dialog audio {
+  width: 70%;
+  height: 40px;
+}
+
 .event-dialog #close-event {
   margin-top: 16px;
   background-color: rgb(149, 40, 40);
