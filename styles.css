@@ -238,11 +238,10 @@ a {
   overflow-y: auto;
 }
 
-
 .event-dialog .container {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  background-color: rgb(255,255,255);
+  background-color: rgb(255, 255, 255);
   width: 100%;
   height: max-content;
   padding: 16px 4px 16px;
@@ -309,80 +308,78 @@ a {
 
 /* Tablet */
 @media screen and (min-width: 480px) {
- .event-dialog h2 {
-  font-size: 1.5em;
-}
+  .event-dialog h2 {
+    font-size: 1.5em;
+  }
 
-.event-dialog p {
-  font-size: 1em;
-}
+  .event-dialog p {
+    font-size: 1em;
+  }
 
-.event-dialog h5 {
-  font-size: 0.9em;
-}
+  .event-dialog h5 {
+    font-size: 0.9em;
+  }
 
-.event-dialog h1 {
-  font-size: 1.6em;
-}
+  .event-dialog h1 {
+    font-size: 1.6em;
+  }
 
-.event-dialog h3 {
-  font-size: 1.1em;
-}
+  .event-dialog h3 {
+    font-size: 1.1em;
+  }
 
-.event-dialog #close-event {
-  font-size: 1.1em;
+  .event-dialog #close-event {
+    font-size: 1.1em;
   }
 }
 
 /* Laptop */
 @media screen and (min-width: 768px) {
- .event-dialog h2 {
-  font-size: 1.6em;
+  .event-dialog h2 {
+    font-size: 1.6em;
+  }
+  .event-dialog p {
+    font-size: 1.1em;
+  }
+  .event-dialog h5 {
+    font-size: 1em;
+  }
 
-}
-.event-dialog p {
-  font-size: 1.1em;
-}
-.event-dialog h5 {
-  font-size: 1em;
-}
+  .event-dialog h1 {
+    font-size: 1.7em;
+  }
 
-.event-dialog h1 {
-  font-size: 1.7em;
-}
-
-.event-dialog h3 {
-  font-size: 1.2em;
-}
-.event-dialog #close-event {
-  font-size: 1.2em;
+  .event-dialog h3 {
+    font-size: 1.2em;
+  }
+  .event-dialog #close-event {
+    font-size: 1.2em;
   }
 }
 
 /* Desktop */
 @media screen and (min-width: 1024px) {
- .event-dialog h2 {
-  font-size: 1.7em;
-}
-.event-dialog p {
-  font-size: 1.2em;
-}
-.event-dialog h5 {
-  font-size: 1.1em;
-}
+  .event-dialog h2 {
+    font-size: 1.7em;
+  }
+  .event-dialog p {
+    font-size: 1.2em;
+  }
+  .event-dialog h5 {
+    font-size: 1.1em;
+  }
 
-.event-dialog h1 {
-  font-size: 1.8em;
-}
+  .event-dialog h1 {
+    font-size: 1.8em;
+  }
 
-.event-dialog h3 {
-  font-size: 1.4em;
-}
-.event-dialog #close-event {
-  font-size: 1.3em;
+  .event-dialog h3 {
+    font-size: 1.4em;
+  }
+  .event-dialog #close-event {
+    font-size: 1.3em;
   }
 }
-
 
 .header {
   position: fixed;
@@ -621,7 +618,7 @@ a.discord-nav:hover {
   object-position: -14px;
 }
 .hisyam-zuhdi img.image {
-  object-position: -21px;
+  object-position: 0px;
 }
 
 .rommel-fox img.image {
