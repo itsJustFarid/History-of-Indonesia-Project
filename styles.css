@@ -413,23 +413,13 @@ a.discord-nav {
   background-color: rgb(58, 76, 238);
   color: white;
   border-radius: 20px;
+  top: 12px;
+  transform: scale(0.9);
   transition: 0.3s;
 }
 
 a.discord-nav:hover {
   background-color: rgb(33, 29, 151);
-}
-
-/* Phone */
-@media screen and (max-width: 480px) {
-  .header a.discord-nav {
-    transform: scale(0.9);
-    font-size: 14px;
-    width: 140px;
-    height: 40px;
-    line-height: 40px;
-    top: 16px;
-  }
 }
 
 /* Tablet */
@@ -556,6 +546,132 @@ a.discord-nav:hover {
   }
 }
 
+.screenshot-preview {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.75);
+  left: 0;
+  top: 0;
+  padding-top: 100px;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  justify-content: center;
+  z-index: 3;
+}
+
+.screenshot-preview img {
+  width: 80%;
+}
+
+.screenshot-preview p {
+  color: white;
+  margin: 10px;
+}
+
+.screenshot-preview .close-btn {
+  position: absolute;
+  top: 1%;
+  right: 7%;
+  font-size: 5em;
+  color: white;
+  cursor: pointer;
+}
+
+.screenshot-section {
+  margin: 50px 0;
+  box-sizing: border-box;
+  padding: 0 5px 20px;
+  background-color: rgb(230, 60, 60);
+  border-radius: 8px;
+}
+
+.screenshot-section .screenshot-title {
+  font-size: 1.5em;
+  padding: 20px;
+  color: white;
+}
+
+.screenshot-section .screenshot-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+
+.screenshot-section .screenshot-column {
+  flex: 50%;
+}
+
+.screenshot-section img {
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+  opacity: 1;
+  filter: grayscale(1);
+  transition: 0.5s;
+}
+
+.screenshot-section img:hover {
+  opacity: 1;
+  transform: rotate(2deg);
+  filter: grayscale(0);
+}
+
+/* Tablet */
+@media screen and (min-width: 480px) {
+  .screenshot-preview img {
+    width: 90%;
+  }
+
+  .screenshot-section .screenshot-title {
+    font-size: 1.6em;
+  }
+
+  .screenshot-section .screenshot-column {
+    flex: 50%;
+  }
+}
+
+/* Laptop */
+@media screen and (min-width: 768px) {
+  .screenshot-preview img {
+    width: 85%;
+  }
+
+  .screenshot-section .screenshot-title {
+    font-size: 1.7em;
+  }
+
+  .screenshot-section .screenshot-column {
+    flex: 40%;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+  .screenshot-preview img {
+    width: 80%;
+  }
+
+  .screenshot-section .screenshot-title {
+    font-size: 1.8em;
+  }
+
+  .screenshot-section .screenshot-column {
+    flex: 40%;
+  }
+}
+
+.team {
+  background-image: linear-gradient(rgb(230, 60, 60), rgb(250, 168, 168));
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 .team h1.team-title {
   flex: 100%;
   color: white;
@@ -569,17 +685,6 @@ a.discord-nav:hover {
   color: rgb(238, 238, 238);
   font-size: 13px;
   margin: 0 0 20px;
-}
-
-.team {
-  background-image: linear-gradient(rgb(230, 60, 60), rgb(250, 168, 168));
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  padding: 5px;
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
 }
 
 .team-item {

@@ -16,7 +16,7 @@
 	<script type="text/javascript" src="cdn_modules/jquery@3.7.1/jquery.min.js"></script>
 </head>
 <body>
-  <div class="event-container pt-sans-regular" id="event-container">
+  <!-- <div class="event-container pt-sans-regular" id="event-container">
     <section class="event-dialog">
       <img class="event_hoid" src="img/hoid.webp" alt="HOID Logo">
       <h1 class="pt-sans-bold">HOID Team</h1>
@@ -35,7 +35,7 @@
       </div>
       <button class="pt-sans-regular" id="close-event">Close</button>
     </section>
-	</div>
+	</div> -->
 
 <div class="container pt-sans-regular">
 	<header class="header">
@@ -51,7 +51,36 @@
 			<br><br>Currently This Project is Developed by History of Indonesia Team.
 		</p>
 		</section>
-		<section class="team cf">
+		<section style="display: none;" class="screenshot-preview">
+			<img src="" alt="">
+			<p class="pt-sans-bold">${alt}</p>
+			<span onclick="$('.close-btn').parent().fadeOut('fast');" class="close-btn">&times;</span>
+		</section>
+		<section class="screenshot-section">
+			<h1 class="screenshot-title pt-sans-bold">Screenshot :</h1>
+			<div class="screenshot-container">
+				<div class="screenshot-column">
+					<img src="/img/screenshot/screenshot-1.webp" alt="HOID Gameplay - Screenshot">
+				</div>
+				<div class="screenshot-column">
+					<img src="/img/screenshot/screenshot-2.webp" alt="HOID Gameplay - Screenshot">
+				</div>
+				<div class="screenshot-column">
+					<img src="/img/screenshot/screenshot-3.webp" alt="HOID Gameplay - Screenshot">
+				</div>
+				<div class="screenshot-column">
+					<img src="/img/screenshot/screenshot-4.webp" alt="HOID Gameplay - Screenshot">
+				</div>
+				<div class="screenshot-column">
+					<img src="/img/screenshot/screenshot-5.webp" alt="HOID Gameplay - Screenshot">
+				</div>
+				<div class="screenshot-column">
+					<img src="/img/screenshot/screenshot-6.webp" alt="HOID Gameplay - Screenshot">
+				</div>
+				
+			</div>
+		</section>
+		<section class="team">
 			<h1 id="team" class="team-title pt-sans-bold">Team</h1>
 			<p class="team-info pt-sans-regular-italic">Tap / hover any card to display detailed information</p>
 			<section class="team-item lynx">
